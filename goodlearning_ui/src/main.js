@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import App from './view/Index.vue'
+import App from './view/Guest/Index.vue'
 import router from './router.js'
 import Axios from 'axios'
 import {BootstrapVue, BootstrapVueIcons } from 'bootstrap-vue'
