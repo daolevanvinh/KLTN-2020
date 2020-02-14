@@ -1,6 +1,5 @@
 <template>
   <div id="header">
-      <button v-on:click="login =! login">login</button>
     <b-navbar v-if="!login" toggleable="lg" type="light" variant="default">
       <b-navbar-brand :href="baseURL">
         <div>
@@ -54,12 +53,11 @@
             </b-input-group-append>
           </b-input-group>
 
-          <button style="width: auto;" class="btn btn-category">Miễn Phí</button>
-          <button style="width: auto;" class="btn btn-category">Dịch Vụ</button>
+          <button style="width: auto;margin-left: 1.5rem;" class="btn btn-category">Miễn Phí</button>
+          <button style="width: auto;margin-left: 1.5rem;" class="btn btn-category">Dịch Vụ</button>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
-    <div v-else>login roi</div>
   </div>
 </template>
 <script>
