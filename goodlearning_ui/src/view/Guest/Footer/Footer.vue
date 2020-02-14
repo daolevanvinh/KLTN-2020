@@ -33,6 +33,7 @@ export default {};
   font-family: "Quicksand", sans-serif;
   background-color: white;
   border-bottom: 10px solid red;
+  overflow-x: hidden;
 }
 .link-container {
   position: absolute;

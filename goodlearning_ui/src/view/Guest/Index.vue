@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="page">
         <Header></Header>
         <router-view></router-view>
         <Footer></Footer>
@@ -14,3 +14,8 @@ export default {
     }
 }
 </script>
+<style lang="scss" scoped>
+#page {
+    overflow-x: hidden;
+}
+</style>

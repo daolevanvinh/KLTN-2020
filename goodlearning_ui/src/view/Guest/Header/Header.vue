@@ -77,6 +77,7 @@ export default {
 <style lang="scss" scoped>
 #header {
   font-family: "Quicksand", sans-serif;
+  overflow-x: hidden;
 }
 .btn-category {
   background-color: white;

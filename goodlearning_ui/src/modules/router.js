@@ -14,6 +14,6 @@ export default [
     }, {
         path: '/test',
         name: 'test-page',
-        component: About
+        component: About,
     }
 ]
