@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8c5c89b2-9416-4f5a-81b4-0a4905b2f3ec" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../goodlearning_ui/src/components/Item/Item.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../goodlearning_ui/src/components/Item/Item.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../goodlearning_ui/src/modules/HomePage_Guest/HomePage_Guest.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../goodlearning_ui/src/modules/HomePage_Guest/HomePage_Guest.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../goodlearning_ui/src/modules/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/../goodlearning_ui/src/modules/router.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
