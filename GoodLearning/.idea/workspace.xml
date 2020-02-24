@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8c5c89b2-9416-4f5a-81b4-0a4905b2f3ec" name="Default Changelist" comment="" />
+    <list default="true" id="8c5c89b2-9416-4f5a-81b4-0a4905b2f3ec" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../goodlearning_ui/src/components/Item/Item.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../goodlearning_ui/src/components/Item/Item.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../goodlearning_ui/src/modules/HomePage_Guest/HomePage_Guest.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../goodlearning_ui/src/modules/HomePage_Guest/HomePage_Guest.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../goodlearning_ui/src/modules/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/../goodlearning_ui/src/modules/router.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +17,9 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -100,6 +108,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1XBVKjpfZFVbBXEcIOzNaJywUQf" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -130,6 +139,7 @@
       <updated>1580519413057</updated>
       <workItem from="1580519419130" duration="1521000" />
       <workItem from="1580522618133" duration="464000" />
+      <workItem from="1582510051416" duration="870000" />
     </task>
     <servers />
   </component>

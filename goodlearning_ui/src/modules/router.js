@@ -1,6 +1,5 @@
 import HomePage_Guest from './HomePage_Guest/HomePage_Guest'
 import About from './About/About'
-
 export default [
     {
         path: '/',
@@ -14,6 +13,6 @@ export default [
     }, {
         path: '/test',
         name: 'test-page',
-        component: About,
+        component: About
     }
 ]

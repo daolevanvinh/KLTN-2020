@@ -26,12 +26,14 @@
           </div>
         </div>
       </b-popover>
+      {{tenoduoi}}
     </router-link>
   </div>
 </template>
 <script>
 export default {
-  props: ['id','item'],
+  props: ['id','item','tenoduoi'],
+
   data() {
     return {
       Item: {
