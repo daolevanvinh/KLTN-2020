@@ -15,7 +15,4 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-#page {
-    overflow-x: hidden;
-}
 </style>
