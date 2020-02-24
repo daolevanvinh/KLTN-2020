@@ -3,16 +3,17 @@ import Router from 'vue-router'
 
 
 
-//import HomePage from './Role/User/modules/HomePage/HomePage.vue'
+//import HomePage_Guest from './modules/HomePage_Guest/HomePage_Guest'
 
 Vue.use(Router)
 
-/** 
+
+/**
  * const BaseRoutes = [
     {
         path: '/',
         name: 'home-page',
-        component: HomePage
+        component: HomePage_Guest
     }
 ]
  */

@@ -9,7 +9,10 @@ Vue.use(Vuex)
 
 export const store = new Vuex.Store({
     state: {
-
+        adminState: {
+            object: {},
+            loading: false
+        }
     },
     mutations,
     actions,

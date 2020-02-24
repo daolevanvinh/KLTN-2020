@@ -30,7 +30,7 @@
         <br />
         <span
           style="font-size: 13pt"
-        >Choose from over 100,000 online video courses with new additions published every month</span>
+        >Choose from over 100,000 online  asdasdvideo courses with new additions published every month</span>
       </div>
       <div class="col-8">
         <b-card no-body>
