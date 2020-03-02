@@ -10,93 +10,55 @@
       img-height="480"
       style="text-shadow: 1px 1px 2px #333;"
     >
-      <!-- Text slides with image -->
       <b-carousel-slide
         caption="First slide"
         text="Nulla vitae elit libero, a pharetra augue mollis interdum."
         img-src="https://www.zendvn.com/images/slider/KOO5CnJ6Hr.jpeg"
       ></b-carousel-slide>
-
-      <!-- Slides with custom text -->
       <b-carousel-slide img-src="https://www.zendvn.com/images/slider/DeX0M02V6t.jpeg"></b-carousel-slide>
-
       <b-carousel-slide img-src="https://www.zendvn.com/images/slider/t1HrRjUfzZ.jpeg"></b-carousel-slide>
     </b-carousel>
-    <div class="row" style="margin: 0 3rem">
-      <div class="col-4" style="padding-top: 5rem">
-        <span class="text-center" style="font-size: 15pt">
-          <b>The world’s largest selection of courses</b>
-        </span>
-        <br />
-        <span
-          style="font-size: 13pt"
-        >Choose from over 100,000 online  asdasdvideo courses with new additions published every month</span>
+    <div>
+      <div class="container">
+        <h2 style="padding-left: 1rem;">Lĩnh vực liên quan</h2>
       </div>
-      <div class="col-8">
-        <b-card no-body>
-          <b-tabs card>
-            <b-tab title="Tab 1" active>
-              <b-carousel
-                id="carousel-no-animation"
-                style="text-shadow: 0px 0px 2px #000"
-                no-animation
-                indicators
-                img-width="1024"
-                img-height="480"
-              >
-                <b-carousel-slide
-                  caption="First slide"
-                  img-src="https://picsum.photos/1024/480/?image=10"
-                ></b-carousel-slide>
-                <b-carousel-slide
-                  caption="Second Slide"
-                  img-src="https://picsum.photos/1024/480/?image=12"
-                ></b-carousel-slide>
-                <b-carousel-slide
-                  caption="Third Slide"
-                  img-src="https://picsum.photos/1024/480/?image=22"
-                ></b-carousel-slide>
-                <b-carousel-slide
-                  caption="Fourth Slide"
-                  img-src="https://picsum.photos/1024/480/?image=23"
-                ></b-carousel-slide>
-              </b-carousel>
-              <div>
-                <div class="overflow-auto">
-                  <b-pagination
-                    @click="alertcheck()"
-                    v-model="currentPage"
-                    :total-rows="rows"
-                    :per-page="perPage"
-                    aria-controls="my-table"
-                  ></b-pagination>
-                </div>
-              </div>
-            </b-tab>
-            <b-tab title="Tab 2">
-              <Item v-bind:tenoduoi="currentPage"  v-on:tensukiencuam="asndjnjansdjnasdj()"></Item>
-            </b-tab>
-          </b-tabs>
-        </b-card>
-      </div>
+      <CollectionRecommend></CollectionRecommend>
     </div>
-    <spinner></spinner>
+    <div class="container">
+      <b-tabs style="margin: 1rem;">
+        <b-tab v-for="(item,index) in arrayCategory" :key="index" @click="changeItem(item.id)">
+          <template slot="title">{{item.name}}</template>
+        </b-tab>
+      </b-tabs>
+      <Collection :id="loadCurrentCategoryID"></Collection>
+    </div>
   </div>
 </template>
 <script>
-import Item from "../../components/Item/Item";
+import Collection from "../../components/Collection/Collection";
+import CollectionRecommend from "../../components/CollectionRecommend/CollectionRecommend";
 export default {
   data() {
     return {
-      rows: 6,
-      currentPage: 1,
-      perPage: 3
+      arrayCategory: [
+        { name: "tab 1", id: "1" },
+        { name: "tab 2", id: "2" },
+        { name: "tab 3", id: "3" },
+        { name: "tab 4", id: "4" },
+        { name: "tab 5", id: "5" }
+      ],
+      currentCategoryId: 0
     };
   },
-  components: { Item },
+  components: { Collection, CollectionRecommend },
   methods: {
-    alertcheck() {
-      console.log("asdasd");
+    changeItem(CategoryID) {
+      this.currentCategoryId = CategoryID;
+    }
+  },
+  computed: {
+    loadCurrentCategoryID() {
+      return this.currentCategoryId;
     }
   }
 };

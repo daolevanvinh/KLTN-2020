@@ -9,6 +9,6 @@
 import Header from "./Header/Header";
 import Footer from "./Footer/Footer";
 export default {
-  components: { Header, Footer }
+  components: { Header, Footer}
 };
 </script>

@@ -1,6 +1,6 @@
 import HomePage_Guest from './HomePage_Guest/HomePage_Guest'
 import About from './About/About'
-
+import CoursePage from './CoursePage/CoursePage'
 
 import AdminLoginPage from './AdminLoginPage/AdminLoginPage'
 export default [
@@ -25,5 +25,10 @@ export default [
         path: '/test',
         name: 'test-page',
         component: About
+    },
+    {
+        path: '/course/:id',
+        name: 'course-page',
+        component: CoursePage
     }
 ]
