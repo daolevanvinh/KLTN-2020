@@ -63,6 +63,7 @@
       </b-collapse>
     </b-navbar>
     <button @click="change()">Change</button>
+    <button @click="promise()">test </button>
   </div>
 </template>
 <script>
@@ -70,6 +71,7 @@ import apiURL from "../../API/api.json";
 import DropdownCategory from "../../components/Dropdown_Category/Dropdown_Category";
 import Login_Modal from "../../components/Login_Modal/Login_Modal";
 import Singup_Modal from "../../components/SignUp_Modal/SignUp_Modal";
+import axios from "axios"
 export default {
   components: { DropdownCategory, Login_Modal, Singup_Modal },
   data() {
@@ -90,6 +92,12 @@ export default {
         localStorage.token = "co";
         this.isLogin = true;
       }
+    },
+    promise() {
+      axios.post('http://localhost:8000/test', {}, {params: {input: 'vinh'}})
+      .then(response => {
+        console.log(response.data)
+      })
     }
   },
   computed: {

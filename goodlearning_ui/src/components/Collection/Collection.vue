@@ -20,7 +20,7 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <div class="row">
-            <div class="col" v-for="index in 5" :key="index">
+            <div class="col" v-for="index in 4" :key="index">
               <Item :id="index"></Item>
             </div>
           </div>
@@ -28,7 +28,7 @@
 
         <div class="carousel-item">
           <div class="row">
-            <div class="col" v-for="index1 in 5" :key="index1">
+            <div class="col" v-for="index1 in 4" :key="index1">
               <Item :id="index1+5"></Item>
             </div>
           </div>
